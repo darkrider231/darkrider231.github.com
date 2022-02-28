@@ -378,6 +378,12 @@ ul {
       text-indent: 50px;
   }
 
+  #about img {
+      width: 650px;
+      height: 650px;
+      margin-left: 600px;
+  }
+
   /* Headings of H1 */
   h1 {
       background: darkred;
