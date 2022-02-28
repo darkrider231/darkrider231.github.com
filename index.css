@@ -1,0 +1,558 @@
+/* Body Layout */
+body {
+    margin: 0 auto;
+    background: black;
+    color: white;
+}
+
+/* NavBar Menu Settings */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkred;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: wheat;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: red;
+  }
+
+  /* Title/Image of Me */
+  #me img{
+    width: 25%;
+    border-radius: 50%;
+  }
+
+  #me {
+    display: flex;
+    position: relative;
+    padding: 100px;
+    margin-left: 700px;
+  }
+
+  #me h2  {
+      display: flex;
+      width: 50%;
+      font-size: 65px;
+  }
+
+  #me p {
+      width: 65%;
+      margin-left: -460px;
+      margin-top: 130px;
+      font-size: 35px;
+  }
+
+  /* Banner that is below my profile picture */
+  #banner img {
+      background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
+      width: 1904px;
+      height: 600px;
+      margin: 0;
+  }
+
+
+/* Video Background Project */
+  #projects #video_background  {
+      background: darkred;
+      color: wheat;
+      border: 1px solid black;
+      box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+      border-radius: 10px;
+      width: 400px;
+      height: 400px;
+      margin-left: 100px;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 100px;
+      padding: 5px;
+  }
+
+  /* Le Pain Project */
+  #projects #le_pain {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -410px;
+    margin-left: 660px;
+    padding: 5px;
+  }
+
+  /* React Shopping Cart Project */
+  #projects #react_shoppingcart {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -410px;
+    margin-left: 1200px;
+    padding: 5px;
+  }
+
+  /* Tasklist Project */
+  #projects #tasklist {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 5px;
+  }
+
+  /* Payment Gateway Form Project */
+  #projects #payment_gateway_form {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -412px;
+    margin-left: 660px;
+    padding: 5px;
+  }
+
+  /* Responsive ChatBox UI Project */
+  #projects #responsive_chatbox_ui {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -412px;
+    margin-left: 1200px;
+    padding: 5px;
+  }
+
+  /* Video Background Button Settings */
+  #projects #video_background button {
+      width: 300px;
+      height: 40px;
+      font-size: 30px;
+      cursor: pointer;
+      background: red;
+      border-radius: 10px;
+      border: none;
+  }
+
+  /* Le Pain Button Settings */
+  #projects #le_pain button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* React Shopping Cart Button Settings */
+  #projects #react_shoppingcart button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* Tasklist Button Settings */
+  #projects #tasklist button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* Payment Gateway Button Settings */
+  #projects #payment_gateway_form button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* Responsive Chatbox UI Button Settings */
+  #projects #responsive_chatbox_ui button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    border: none;
+  }
+
+  #projects #video_background button:hover {
+      background: darkred;
+  }
+
+  /* React Shopping Cart Button changes background when mouse moves over */
+  #projects #react_shoppingcart button:hover {
+      background: darkred;
+  }
+
+  /* Le Pain Button changes background when mouse moves over */
+  #projects #le_pain button:hover {
+      background: darkred;
+  }
+
+  /* Tasklist Button changes background when mouse moves over */
+  #projects #tasklist button:hover {
+      background: darkred;
+  }
+
+  /* Payment Gateway Form Button changes background when mouse moves over */
+  #projects #payment_gateway_form button:hover {
+      background: darkred;
+  }
+
+  /* Responsive Chatbox UI Button changes background when mouse moves over */
+  #projects #responsive_chatbox_ui button:hover {
+      background: darkred;
+  }
+
+  /* Video Background a link settings */
+  #projects #video_background a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* Le Pain a link settings */
+  #projects #le_pain a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* React Shoppingcart a link settings */
+  #projects #react_shoppingcart a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* Tasklist a link settings */
+  #projects #tasklist a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* Payment Gateway Form a link settings */
+  #projects #payment_gateway_form a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* Responsive Chatbox UI a link settings */
+  #projects #responsive_chatbox_ui a {
+      text-decoration: none;
+      color: wheat;
+  }
+
+  /* Video Background change color when mouse moves over */
+  #projects #video_background:hover {
+    background: red;
+  }
+
+  /* Le Pain Background change color when mouse moves over */
+  #projects #le_pain:hover {
+      background: red;
+  }
+
+  /* React Shopping Cart Background change color when mouse moves over */
+  #projects #react_shoppingcart:hover {
+      background: red;
+  }
+
+  /* Tasklist Background change color when mouse moves over */
+  #projects #tasklist:hover {
+      background: red;
+  }
+
+  /* Payment Gateway Form Background change color when mouse moves over */
+  #projects #payment_gateway_form:hover {
+      background: red;
+  }
+
+  /* Responsive Chatbox UI Background change color when mouse moves over */
+  #projects #responsive_chatbox_ui:hover {
+      background: red;
+  }
+
+/* Video Background Img settings */
+#projects #video_background img {
+    width: 350px;
+    height: 250px;
+}
+
+/* Le Pain Img settings */
+  #projects #le_pain img {
+      width: 350px;
+      height: 250px;
+  }
+
+  /* React Shopping Cart Img Settings */
+  #projects #react_shoppingcart img {
+      width: 350px;
+      height: 250px;
+  }
+
+  /* Tasklist Img Settings */
+  #projects #tasklist img {
+      width: 350px;
+      height: 250px;
+  }
+
+  /* Payment Gateway Form Img Settings */
+  #projects #payment_gateway_form img {
+      width: 350px;
+      height: 250px;
+  }
+
+  /* Responsive Chatbox UI Img Settings */
+  #projects #responsive_chatbox_ui img {
+      width: 350px;
+      height: 250px;
+  }
+
+  /* About Me Section */
+  #about {
+      padding-bottom: 10px;
+  }
+  #about p {
+      font-size: 35px;
+      text-indent: 50px;
+  }
+
+  /* Headings of H1 */
+  h1 {
+      background: darkred;
+      color: wheat;
+      text-align: center;
+      font-size: 50px;
+ }
+
+ /* Resume Section */
+   .resume {
+      border: 5px solid white;
+      color: black;
+      width: 150px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      padding: 10px;
+  }
+
+  #view_projects button {
+      background: black;
+      border: 5px solid white;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 65px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-size: 35px;
+      width: 350px;
+      margin-left: 700px;
+  }
+
+  #view_projects button a{
+      text-decoration: none;
+      color: wheat;
+  }
+
+  .resume a {
+      text-decoration: none;
+      color: wheat;
+      font-size: 25px;
+      width: 100%;
+  }
+
+  #contact h4 {
+      text-align: center;
+      margin-left: 150px;
+      font-size: 30px;
+      color: red;
+  }
+  #contact {
+      width: 100%;
+      height: 0 auto;
+  }
+
+  #contact legend {
+      text-align: center;
+      font-size: 35px;
+      color: wheat;
+      border: 1px solid wheat;
+      width: 510px;
+      align-items: center;
+      display: inline;
+      margin-left: 780px;
+      
+  }
+
+  #contact label {
+      font-size: 30px;
+      margin-left: 780px;
+      color: wheat;
+      margin-top: 10px;
+  }
+
+  #contact input {
+      font-size: 30px;
+      margin-left: 780px;
+  }
+
+  #contact input:hover {
+      border: 3px solid red;
+  }
+
+  #contact textarea {
+      font-size: 25px;
+      margin-left: 780px;
+  
+  }
+
+  #contact textarea:hover {
+      border: 3px solid red;
+  }
+
+  #contact .submit {
+      font-size: 35px;
+      background: black;
+      color: wheat;
+      border: 3px solid wheat;
+      border-radius: 10px;
+      margin-left: 830px;
+      margin-top: 10px;
+  }
+
+  #contact .submit:hover {
+      cursor: pointer;
+  }
+
+  #contact .clear {
+    font-size: 35px;
+    background: black;
+    color: wheat;
+    border: 3px solid wheat;
+    border-radius: 10px;
+  }
+
+  #contact .clear:hover {
+      cursor: pointer;
+  }
+
+  #social .github {
+      height: 100px;
+      width: 100px;
+      margin-left: 100px;
+  }
+
+  #social .github:hover {
+      cursor: pointer;
+  }
+
+  #social .youtube {
+      height: 100px;
+      width: 100px;
+      margin-left: 300px;
+  }
+
+  #social .youtube:hover {
+      cursor: pointer;
+  }
+
+  #social .facebook {
+      height: 100px;
+      width: 100px;
+      margin-left: 300px;
+  }
+
+  #social .facebook:hover {
+      cursor: pointer;
+  }
+
+  #social .linkedin {
+      height: 100px;
+      width: 100px;
+      margin-left: 300px;
+  }
+
+  #social .linkedin:hover {
+      cursor: pointer;
+  }
+
+  #social .twitter {
+      height: 100px;
+      width: 100px;
+      margin-left: 300px;
+  }
+
+  #social .twitter:hover {
+      cursor: pointer;
+  }
+
+  #footer {
+      font-size: 35px;
+      text-align: center;
+      color: wheat;
+      background: #333;
+  }
