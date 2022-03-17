@@ -341,26 +341,31 @@
   }
 
   #contact legend {
-      text-align: center;
-      font-size: 35px;
-      color: red;
-      border: 1px solid darkred;
-      width: 25%;
-      margin-left: 900px;      
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-size: 35px;
+    color: red;
+    border: 1px solid darkred;
   }
 
   #contact label {
-      font-size: 50px;
-      margin-left: 900px;
-      color: red;
-      margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 50px;
+    color: red;
+    margin-top: 10px;
   }
 
   #contact input {
-      font-size: 40px;
-      margin-left: 900px;
-      color: red;
-      background: beige;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 40px;
+    color: red;
+    background: beige;
   }
 
   #contact input:hover {
@@ -368,10 +373,12 @@
   }
 
   #contact textarea {
-      font-size: 35px;
-      margin-left: 900px;
-      resize: none;
-      background: beige;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 35px;
+    resize: none;
+    background: beige;
   }
 
   #contact textarea:hover {
@@ -379,12 +386,14 @@
   }
 
   #contact .submit {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
       font-size: 55px;
       background: black;
       color: red;
       border: 3px solid darkred;
       border-radius: 10px;
-      margin-left: 950px;
       margin-top: 10px;
   }
 
@@ -395,12 +404,16 @@
   }
 
   #contact .clear {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
     font-size: 55px;
     background: black;
     color: red;
     border: 3px solid darkred;
     border-radius: 10px;
-    margin-left: 200px;
+    margin-top: -71px;
+    margin-left: 1080px;
   }
 
   #contact .clear:hover {
@@ -416,7 +429,7 @@
   #social .twitter {
       height: 100px;
       width: 100px;
-      margin-left: 300px;
+      margin-left: 250px;
   }
 
   #social .github:hover,
