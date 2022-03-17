@@ -458,6 +458,14 @@
         background: none;
     }
 
+    #me h2 {
+        font-size: 25px;
+    }
+
+    #me p {
+        font-size: 15px;
+    }
+
   
     #me img {
         display: block;
