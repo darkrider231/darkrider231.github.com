@@ -459,11 +459,16 @@
     }
 
     #me h2 {
-        font-size: 25px;
+        margin-left: -20px;
+        width: 150%;
+        font-size: 35px;
     }
 
     #me p {
-        font-size: 15px;
+        margin-left: -10px;
+        margin-top: -20px;
+        width: 125%;
+        font-size: 20px;
     }
 
   
