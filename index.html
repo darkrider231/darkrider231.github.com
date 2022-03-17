@@ -12,110 +12,136 @@
 
 <body>
     <!-- NavBar Section -->
-    <nav id="nav-bar">
-        <ul>
-            <li><a href="#social">Social</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#home">Home</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div id="me">
-            <h2>Grant Patterson</h2>
-            <p>Website Design/Programmer</p>
-            <img src="/MyPortfolioWebsite/images/me.jpg" alt="me">
+    <!-- Simulate a smartphone / tablet look -->
+    <div class="mobile-container">
+        <div class="topnav">
+            <a href="#home" class="active">Home</a>
+            <div id="myLinks">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#social">Social</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    </section>
-    <section id="banner">
-        <img src="/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg" alt="banner">
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>Projects</h1>
-
-        <div id="video_background">Video Background Project
-            <p><img src="/MyPortfolioWebsite/images/vbcover.png" alt="Video Background"></p>
-            <button><a href="https://github.com/darkrider231/VideoBackground" target="_blank">View Project</a></button>
-        </div>
-        <div id="le_pain">Le Pain
-            <p><img src="/MyPortfolioWebsite/images/lepain.jpg" alt=" Le Pain"></p>
-            <button><a href="https://github.com/darkrider231/LePain" target="_blank">View Project</a></button>
-        </div>
-        <div id="react_shoppingcart">React Shopping Cart
-        <p><img src="/MyPortfolioWebsite/images/reactshoppingcart1.png" alt="React Shopping Cart"></p>
-        <button><a href="https://github.com/darkrider231/ReactShoppingCart" target="_blank">View Project</a></button></div>
-        <div id="tasklist">TaskList
-            <p><img src="/MyPortfolioWebsite/images/tasklist.png" alt="Task List"></p>
-            <button><a href="https://github.com/darkrider231/TaskList" target="_blank">View Project</a></button>
-        </div>
-        <div id="payment_gateway_form">Payment Gateway Form
-            <p><img src="/MyPortfolioWebsite/images/paymentgatewayform.png" alt="Payment Gateway Form"></p>
-            <button><a href="https://github.com/darkrider231/PaymentGatewayForm" target="_blank">View Project</a></button>
-        </div>
-        <div id="responsive_chatbox_ui">Responsive Chatbox UI
-            <p><img src="/MyPortfolioWebsite/images/responsivechatboxuidesign.png" alt="Responsive Chatbox UI Desgin"></p>
-            <button><a href="https://github.com/darkrider231/ResponsiveChatBoxUIDesign" target="_blank">View Project</a></button>
+        <div id="dark-mode">
         </div>
 
-        <div id="view_projects">
-            <button>
-                <a href="https://github.com/darkrider231" target="_blank">View More Projects</a>
-            </button>
-        </div>
-    </section>
+        <!-- Home Section -->
+        <section id="home">
+            <div id="me">
+                <h2>Grant Patterson</h2>
+                <p>Website Design/Programmer</p>
+                <img src="/MyPortfolioWebsite/images/me.jpg" alt="me">
+                <button onclick="darkMode()" id="dark-mode">Toggle Dark Mode</button>
+            </div>
+        </section>
+        <section id="banner">
+            <img src="/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg" alt="banner">
+        </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>My name is Grant Patterson. I live in a rural area of Campbellsville, Ky. I have my Associate Degree in C.I.S. (Computer Information Systems). In my spare time, I play video games, and watch sports. Being able to study about programming, I learned how to do C# and VB.net. I have finished the class Web Development. In the class, I have learned how to make website designs.</p>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>Projects</h1>
 
-        <p><img src="/MyPortfolioWebsite/images/bcskillswebdevelopmenttrainingcertificate2021.jpg" alt="BC Skills Web Development Training Certificate 2021"></p>
-    </section>
+            <div id="video_background">Video Background Project
+                <p><img src="/MyPortfolioWebsite/images/vbcover.png" alt="Video Background"></p>
+                <button><a href="https://github.com/darkrider231/VideoBackground" target="_blank">View
+                        Project</a></button>
+            </div>
+            <div id="le_pain">Le Pain
+                <p><img src="/MyPortfolioWebsite/images/lepain.jpg" alt=" Le Pain"></p>
+                <button><a href="https://github.com/darkrider231/LePain" target="_blank">View Project</a></button>
+            </div>
+            <div id="react_shoppingcart">React Shopping Cart
+                <p><img src="/MyPortfolioWebsite/images/reactshoppingcart1.png" alt="React Shopping Cart"></p>
+                <button><a href="https://github.com/darkrider231/ReactShoppingCart" target="_blank">View
+                        Project</a></button>
+            </div>
+            <div id="tasklist">TaskList
+                <p><img src="/MyPortfolioWebsite/images/tasklist.png" alt="Task List"></p>
+                <button><a href="https://github.com/darkrider231/TaskList" target="_blank">View Project</a></button>
+            </div>
+            <div id="payment_gateway_form">Payment Gateway Form
+                <p><img src="/MyPortfolioWebsite/images/paymentgatewayform.png" alt="Payment Gateway Form"></p>
+                <button><a href="https://github.com/darkrider231/PaymentGatewayForm" target="_blank">View
+                        Project</a></button>
+            </div>
+            <div id="responsive_chatbox_ui">Responsive Chatbox UI
+                <p><img src="/MyPortfolioWebsite/images/responsivechatboxuidesign.png"
+                        alt="Responsive Chatbox UI Desgin"></p>
+                <button><a href="https://github.com/darkrider231/ResponsiveChatBoxUIDesign" target="_blank">View
+                        Project</a></button>
+            </div>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h1>View Resume</h1>
-        <h3 class="resume"><a href="/MyPortfolioWebsite/images/resume2021a.pdf" target="_blank">View Resume</a></h3>
-    </section>
+            <div id="view_projects">
+                <button>
+                    <a href="https://github.com/darkrider231" target="_blank">View More Projects</a>
+                </button>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <h4>Example Contact Form</h4>
-        <form id="contactMe" action="">
-            <legend>Contact Me</legend>
-            <label id="firstName" value="firstName" name="firstName">First Name:</label><br>
-            <input type="text" id="firstName"  placeholder="First Name" required><br>
-            <label id="lastName" value="lastName">Last Name:</label><br>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-            <label id="emailAddress" value="emailAddress">Email Address:</label><br>
-            <input type="email" placeholder="Enter Email Address" required>
-            <label id="textArea" value="textArea">Write Something Here:</label>
-            <textarea cols="35" rows ="10" placeholder="Enter something here...." ></textarea><br>
-            <button type="submit" class="submit">Submit</button>
-            <button type="clear" class="clear">Clear</button>
-        </form>
-    </section>
+        <!-- About Me Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <p>My name is Grant Patterson. I live in a rural area of Campbellsville, Ky. I have my Associate Degree in
+                C.I.S. (Computer Information Systems). In my spare time, I play video games, and watch sports. Being
+                able to study about programming, I learned how to do C# and VB.net. I have finished the class Web
+                Development. In the class, I have learned how to make website designs.</p>
 
-    <section id="social">
-        <h1>Social</h1>
-        
-           <p>
-               <a href="https://github.com/darkrider231" target="_blank"><img src="/MyPortfolioWebsite/images/github.png" alt="github" class="github"></a>
-               <a href="https://www.youtube.com/user/darkrider2312" target="_blank"><img src="/MyPortfolioWebsite/images/youtube.png" alt="youtube" class="youtube"></a>
-               <img src="/MyPortfolioWebsite/images/facebook.png" alt="facebook" class="facebook">
-               <a href="https://www.linkedin.com/in/grant-patterson-5b3348207/" target="_blank"><img src="/MyPortfolioWebsite/images/linkedin.png" alt="linkedin" class="linkedin"></a>
-               <a href="https://twitter.com/darkrider231" target="_blank"><img src="/MyPortfolioWebsite/images/twitter.png" alt="twitter" class="twitter"></a>
-           </p>    
-    </section>
+            <p><img src="/MyPortfolioWebsite/images/bcskillswebdevelopmenttrainingcertificate2021.jpg"
+                    alt="BC Skills Web Development Training Certificate 2021"></p>
+        </section>
 
-    <section id="footer">
-        &copy;Grant Patterson | Updated February 2022
-    </section>
+        <!-- Resume Section -->
+        <section id="resume">
+            <h1>View Resume</h1>
+            <h3 class="resume"><a href="/MyPortfolioWebsite/images/resume2021a.pdf" target="_blank">View Resume</a></h3>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <h4>Example Contact Form</h4>
+            <form id="contactMe" action="">
+                <legend>Contact Me</legend>
+                <label id="firstName" value="firstName" name="firstName">First Name:</label><br>
+                <input type="text" id="firstName" placeholder="First Name" required><br>
+                <label id="lastName" value="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" placeholder="Last Name" required><br>
+                <label id="emailAddress" value="emailAddress">Email Address:</label><br>
+                <input type="email" placeholder="Enter Email Address" required><br>
+                <label id="textArea" value="textArea">Write Something Here:</label>
+                <textarea cols="35" rows="10" placeholder="Enter something here...."></textarea><br>
+                <div id="submit">
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="clear" class="clear">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="social">
+            <h1>Social</h1>
+
+            <p>
+                <a href="https://github.com/darkrider231" target="_blank"><img
+                        src="/MyPortfolioWebsite/images/github.png" alt="github" class="github"></a>
+                <a href="https://www.youtube.com/user/darkrider2312" target="_blank"><img
+                        src="/MyPortfolioWebsite/images/youtube.png" alt="youtube" class="youtube"></a>
+                <img src="/MyPortfolioWebsite/images/facebook.png" alt="facebook" class="facebook">
+                <a href="https://www.linkedin.com/in/grant-patterson-5b3348207/" target="_blank"><img
+                        src="/MyPortfolioWebsite/images/linkedin.png" alt="linkedin" class="linkedin"></a>
+                <a href="https://twitter.com/darkrider231" target="_blank"><img
+                        src="/MyPortfolioWebsite/images/twitter.png" alt="twitter" class="twitter"></a>
+            </p>
+        </section>
+
+        <section id="footer">
+            &copy;Grant Patterson | Updated February 2022
+        </section>
+
+        <script src="index.js"></script>
 </body>
 
 </html>
