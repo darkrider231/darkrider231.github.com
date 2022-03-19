@@ -3,7 +3,17 @@
 .dark-mode {
     background: #181818;
     color: #f1c232;
-    
+}
+
+.twitter-share-button {
+    background: darkblue;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 675px;
 }
 
 /* NavBar Menu Settings */
@@ -86,7 +96,7 @@
       width: 100%;
       height: 600px;
       margin: 0;
-     
+      margin-top: 20px;
   }
 
 
@@ -484,6 +494,7 @@
     #me button{
         margin-left: 0px;
         font-size: 20px;
+        margin-bottom: -105px;
     }
    
 
@@ -526,7 +537,7 @@
         background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
         width: 100%;
         height: 285px;
-        margin-top: 30px;
+        margin-top: 20px;
     }  
 
     #projects #video_background, 
@@ -649,7 +660,7 @@
         margin: 0 auto;
         width: 25%;
         font-size: 20px;
-        margin-left: 90px;
+        margin-left: 115px;
     }
 
     #contact .clear {
@@ -657,7 +668,7 @@
         margin: 0 auto;
         width: 25%;
         font-size: 20px;
-        margin-left: 200px;
+        margin-left: 250px;
         margin-top: -31px;
     }
     
@@ -670,7 +681,7 @@
     #social .facebook,
     #social .linkedin,
     #social .twitter {
-          margin-left: 40px;
+          margin-left: 50px;
           width: 35px;
           height: 35px;
       }
@@ -679,4 +690,15 @@
           font-size: 15px;
           text-align: center;
       }
-  }
+
+      .fb-like {
+          margin-top: 10px;
+          width: 200px;
+          padding-top: 125px;
+      }
+
+      .twitter-share-button {
+          margin-left: 65px;
+      }
+
+}
