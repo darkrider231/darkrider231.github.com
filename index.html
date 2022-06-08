@@ -13,13 +13,10 @@
 <body>
     <!-- JavaScript Facebook Like/Share button -->
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="YNS622hh"></script>
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet">
-Tweet</a>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+        nonce="YNS622hh"></script>
     <!-- NavBar Section -->
     <!-- Simulate a smartphone / tablet look -->
-    <div class="mobile-container">
         <div class="topnav">
             <a href="#home" class="active">Home</a>
             <div id="myLinks">
@@ -27,6 +24,16 @@ Tweet</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
                 <a href="#social">Social</a>
+
+
+            </div>
+            <div class="switch">
+                <i class="fa-solid fa-sun"></i>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round" onclick="darkMode()"></div>
+                </label>
+                <i class="fa-solid fa-moon"></i>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -41,12 +48,18 @@ Tweet</a>
                 <h2>Grant Patterson</h2>
                 <p>Website Design/Programmer</p>
                 <img src="/MyPortfolioWebsite/images/me.jpg" alt="me">
-                <button onclick="darkMode()" id="dark-mode">Toggle Dark Mode</button>
-                <div class="fb-like" data-href="https://darkrider231.netlify.app/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"> 
-            </div><a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Visit%20my%20website%20at%20https://darkrider231.netlify.app"
-            data-size="large">
-          Tweet</a>
+
+                <!-- Facebook Like/Twitter Share buttons -->
+                <div class="social-share">
+                    <div class="fb-like" data-href="https://darkrider231.netlify.app/" data-width=""
+                        data-layout="button_count" data-action="like" data-size="large" data-share="true">
+                    </div>
+                    <div class="twitter-share">
+                        <a href="https://twitter.com/intent/tweet?text=Visit%20my%20website%20at%20https://darkrider231.netlify.app"
+                        data-size="large">
+                        Tweet</a>
+                    </div>
+                </div>
         </section>
         <section id="banner">
             <img src="/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg" alt="banner">

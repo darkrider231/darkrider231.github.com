@@ -1,44 +1,94 @@
+/* Desktop Display */
 body {
-    width: 100%;
     margin: 0 auto;
-    font-size: 15px;
 }
 
 /* Color Themes */
-/* Set Light Mode color as default value */
 .dark-mode {
-    background: #181818;
+    background: #002358;
     color: #f1c232;
 }
 
-.fb-like {
-    opacity: 1;
-    transform: scale(2);
+/* Tutorial: https://codepen.io/cortez/pen/jOrNGGQ */
+.switch {
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    top: 10px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
     width: 100px;
 }
 
-.fb-like,
-.twitter-share-button {
-    display: block;
-    margin: 0 auto;
-    margin-left: 185px;
-    width: 50%;
-    text-align: center;
-    font-size: 35px;
-    padding: 14px 16px;
+.theme-switch input {
+    display: none;
 }
 
-.twitter-share-button {
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .3s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: #2b2b2b;
+}
+
+input:checked+.slider:before {
+    transform: translateX(60px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.fa-moon, .fa-sun {
+    font-size: 35px;
+}
+
+.social-share {
+    width: 10%;
+}
+
+.fb-like {
+    margin-left: 185px;
+    font-size: 35px;
+    transform: scale(1.5);
+}
+
+.twitter-share a {
+    margin-top: -100px;
     background: #33B3FF;
     border-radius: 10px;
-    margin-top: -50px;
-    margin-left: 610px;
-    width: 200px;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+    padding: 5px;
     text-decoration: none;
     color: white;
-    font-weight: 700;
 }
 
 #me button {
@@ -129,6 +179,7 @@ body {
 
 /* Banner that is below my profile picture */
 #banner img {
+    margin: 0 auto;
     background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
     display: block;
     width: 100%;
@@ -481,360 +532,160 @@ h1 {
     background: #333;
 }
 
+/* Small Phones Display */
 @media screen and (max-width: 480px) {
     .topnav {
-        display: block;
         margin: 0 auto;
-        width: 480px;
+        width: 100%;
     }
 
     .topnav a {
+        font-size: 15px;
+    }
+
+    .switch {
+        height: 10px;
+        width: 108px;
+        position: fixed;
+        left: 340px;
+        top: 5px;
+    }
+
+    .theme-switch {
+        display: inline-block;
+        height: 20px;
+        position: relative;
+        width: 50px;
+    }
+
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .5s;
+    }
+
+    .slider:before {
+        background-color: #fff;
+        bottom: 3px;
+        content: "";
+        height: 15px;
+        left: 4px;
+        position: absolute;
+        transition: .3s;
+        width: 15px;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(30px);
+    }
+
+    .fa-moon, .fa-sun {
         font-size: 25px;
     }
 
-    #me h2,
-    #me p {
-        display: block;
+    #me h2 {
         margin: 0 auto;
-        width: 50%;
-        font-size: 30px;
-        width: 300px;
-        margin-top: 50px;
+        margin-top: 35px;
+        font-size: 25px;
+        width: 100%;
     }
 
     #me p {
+        margin-top: 5px;
+        margin: 0 auto;
         font-size: 20px;
-        margin-top: 10px;
+        width: 100%;
     }
 
     #me img {
-        display: block;
         margin: 0 auto;
-        width: 90%;
-        margin-top: 20px;
-    }
-
-    #me button {
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        font-size: 20px;
+        margin-top: 30px;
+        width: 100%;
     }
 
     .fb-like {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    .fb-like,
-    .twitter-share-button {
-        display: block;
         margin: 0 auto;
-        width: 80%;
-        text-align: center;
-        font-size: 35px;
-        padding: 14px 16px;
+
     }
 
-    .twitter-share-button {
-        background: #33B3FF;
-        border-radius: 10px;
-        margin-top: -10px;
-        width: 120px;
-        font-size: 20px;
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
+    .twitter-share a {
+        margin: 0 auto;
+        margin-left: 60px;
     }
 
     #banner img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    h1 {
-        margin-top: 10px;
-        font-size: 30px;
+        margin: 10 auto;
+        height: 500px;
     }
 
     #projects #video_background,
     #projects #le_pain,
     #projects #react_shoppingcart,
+    #projects #tasklist,
     #projects #payment_gateway_form,
     #projects #responsive_chatbox_ui,
-    #projects #tasklist {
-        display: block;
+    #projects #view_projects {
+        margin: 20px auto;
+    }
+
+    #projects #view_projects button {
         margin: 0 auto;
         width: 50%;
-        width: 300px;
-        height: 300px;
-        margin-bottom: 20px;
-        font-size: 25px;
-    }
-
-    #projects #video_background img,
-    #projects #le_pain img,
-    #projects #react_shoppingcart img,
-    #projects #tasklist img,
-    #projects #payment_gateway_form img,
-    #projects #responsive_chatbox_ui img {
-        width: 150px;
-        height: 150px;
-    }
-
-    #projects #video_background button,
-    #projects #le_pain button,
-    #projects #react_shoppingcart button,
-    #projects #tasklist button,
-    #projects #payment_gateway_form button,
-    #projects #responsive_chatbox_ui button {
-        width: 150px;
-        height: 40px;
-        font-size: 15px;
-        cursor: pointer;
-        background: red;
-        border-radius: 10px;
-        border: none;
-    }
-
-    #view_projects button {
         font-size: 20px;
-        width: 320px;
     }
 
     #about p {
+        margin: 0 auto;
         font-size: 20px;
     }
 
     #about img {
-        display: block;
         margin: 0 auto;
-        width: 50%;
-        width: 280px;
-        height: 280px;
+        width: 90%;
+        height: 90%;
     }
 
-    .resume {
-        display: block;
+    #resume .resume {
         margin: 0 auto;
         width: 50%;
-        font-size: 20px;
-        width: 150px;
-        height: 25px;
+        height: 50%;
     }
 
-    #contact h4,
+    #contact h4 {
+        font-size: 30px;
+    }
+
     #contact legend,
     #contact label,
-    #contact input,
     #contact textarea {
-        font-size: 25px;
-        margin: 0 auto;
+        font-size: 30px;
+        width: 75%;
     }
 
     #contact input {
-        margin-top: -15px;
-    }
-
-    #contact textarea {
-        font-size: 20px;
-        height: 200px;
-    }
-
-    #social {
-        margin-top: -100px;
-    }
-
-    #social .github,
-    #social .youtube,
-    #social .facebook,
-    #social .linkedin,
-    #social .twitter {
-        margin-left: 15px;
-        width: 75px;
-        height: 75px;
-    }
-
-    #footer {
         font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .topnav {
-        top: 0;
-        left: 0;
-        position: fixed;
-        width: 100%;
-    }
-
-    .topnav a {
-        font-size: 25px;
-    }
-
-    #me h2 {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        width: 400px;
-        margin-left: -10px;
-        margin-top: 70px;
-        font-size: 50px;
-    }
-
-    #me p {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        width: 500px;
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
-    #me img {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-
-    #me button {
-        display: block;
-        margin: 0 auto;
-        margin-left: 10px;
-        ;
-        width: 60%;
-        font-size: 25px;
-    }
-
-
-    .fb-like {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    .fb-like,
-    .twitter-share-button {
-        display: block;
-        margin: 0 auto;
-        margin-left: 10px;
-        width: 50%;
-        text-align: center;
-        font-size: 35px;
-        padding: 14px 16px;
-    }
-
-    .twitter-share-button {
-        background: #33B3FF;
-        border-radius: 10px;
-        margin-top: -10px;
-        margin-left: 50px;
-        width: 120px;
-        font-size: 20px;
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-    }
-
-    #banner img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-
-    }
-
-    h1 {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 0px;
-    }
-
-    #projects #video_background,
-    #projects #le_pain,
-    #projects #react_shoppingcart,
-    #projects #payment_gateway_form,
-    #projects #responsive_chatbox_ui,
-    #projects #tasklist {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        width: 300px;
-        height: 300px;
-        margin-bottom: 20px;
-        font-size: 25px;
-    }
-
-    #projects #video_background img,
-    #projects #le_pain img,
-    #projects #react_shoppingcart img,
-    #projects #tasklist img,
-    #projects #payment_gateway_form img,
-    #projects #responsive_chatbox_ui img {
-        width: 250px;
-        height: 150px;
-    }
-
-    #view_projects button {
-        width: 200px;
-        height: 40px;
-    }
-
-    #view_projects a {
-        font-size: 20px;
-
-    }
-
-    #about p {
-        display: block;
-        margin: 0 auto;
-        font-size: 25px;
-    }
-
-    #about img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .resume {
-        width: 250px;
-        height: 40px;
-    }
-
-    #contact h4,
-    #contact legend,
-    #contact label,
-    #contact input,
-    #contact textarea {
-        margin-top: 5px;
-        font-size: 35px;
+        width: 75%;
+        margin-top: -20px;
     }
 
     #contact .submit {
-        font-size: 25px;
-        display: block;
         margin: 0 auto;
-        width: 50%;
-        width: 100px;
-        margin-left: 220px;
+        margin-left: 55px;
+        font-size: 25px;
+        width: 25%;
     }
 
     #contact .clear {
-        font-size: 25px;
-        display: block;
         margin: 0 auto;
-        width: 50%;
-        width: 100px;
-        margin-top: -37px;
-        margin-left: 420px;
+        margin-left: 300px;
+        margin-top: -38px;
+        font-size: 25px;
+        width: 25%;
     }
 
     #social .github,
@@ -843,178 +694,12 @@ h1 {
     #social .linkedin,
     #social .twitter {
         display: inline;
-        margin: 0 auto;
-        width: 50%;
-        width: 300px;
-        margin-left: 60px;
-        width: 75px;
-        height: 75px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .topnav {
-        display: inline;
-        margin: 0 auto;
-        width: 100%;
-        z-index: 1;
-    }
-    #me h2 {
-        display: block;
-        margin: 0 auto;
-        margin-top: 150px;
-        width: 800px;
-        font-size: 80px;
-    }
-
-    #me p {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        width: 520px;
-        font-size: 45px;
-    }
-
-    #me img {
-        display: block;
-        margin: 0 auto;
-        width: 150%;
-        margin-left: 600px;
-        margin-top: -200px;
-    }
-
-    .fb-like {
-        display: block;
-        margin: 0 auto;
-        width: 150%;
-    }
-
-    .twitter-share-button {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        margin-left: 570px;
-        margin-top: -50px;
-    }
-
-    #banner img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    h1 {
-        display: block;
-        margin: 0 auto;
-        width: 166%;
-        margin-top: 20px;
-    }
-
-    #projects #video_background,
-    #projects #tasklist {
-        margin-left: 150px;
-    }
-
-    #projects #le_pain,
-    #projects #payment_gateway_form {
-        margin-left: 650px;
-    }
-
-    #projects #react_shoppingcart,
-    #projects #responsive_chatbox_ui {
-        margin-left: 1150px;
-    }
-
-    #view_projects {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        margin-left: 600px;
-    }
-
-    #about p {
-        display: block;
-        margin: 0 auto;
-        width: 165%;
-        padding-left: 10px;
-    }
-
-    .resume {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        width: 300px;
         height: 50px;
-        margin-left: 700px;
-    }
-
-    #contact h4,
-    #contact legend,
-    #contact label,
-    #contact input,
-    #contact textarea {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        margin-left: 350px;
-        font-size: 55px;
-    }
-
-    #contact .submit {
-        display: block;
-        margin: 0 auto;
-        width: 25%;
-    }
-
-    #contact .clear {
-        display: block;
-        margin: 0 auto;
-        width: 25%;
-        margin-left: 1100px;
-        margin-top: -70px;
-    }
-
-    #social {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-
-    }
-
-    #social p {
-        display: flex;
-        margin: 0 auto;
-        width: 100%;
-
-    }
-
-    #social .github,
-    #social .youtube,
-    #social .facebook,
-    #social .linkedin,
-    #social .twitter {
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
-        margin-left: 120px;
-        margin-bottom: 20px;
+        width: 50px;
+        margin-left: 40px;
     }
 
     #footer {
-        display: block;
-        margin: 0 auto;
-        width: 166%;
-        font-size: 55px;
+        font-size: 20px;
     }
-}
-
-@media screen and (max-width: 1200px) {
-    #me h2,
-    #me p {
-        width: 800px;
-    }
-
-  
-   
 }
