@@ -545,9 +545,9 @@ h1 {
 
     .switch {
         height: 10px;
-        width: 108px;
+        width: 110px;
         position: fixed;
-        left: 340px;
+        left: 300px;
         top: 5px;
     }
 
