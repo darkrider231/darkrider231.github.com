@@ -1,20 +1,106 @@
+/* Desktop Display */
+body {
+    margin: 0 auto;
+}
+
 /* Color Themes */
-/* Set Light Mode color as default value */
 .dark-mode {
-    background: #181818;
+    background: #002358;
     color: #f1c232;
 }
 
-.twitter-share-button {
-    background: darkblue;
-    color: white;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 675px;
+/* Tutorial: https://codepen.io/cortez/pen/jOrNGGQ */
+.switch {
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    top: 10px;
 }
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 100px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .3s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: #2b2b2b;
+}
+
+input:checked+.slider:before {
+    transform: translateX(60px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.fa-moon, .fa-sun {
+    font-size: 35px;
+}
+
+.social-share {
+    width: 10%;
+}
+
+.fb-like {
+    margin-left: 185px;
+    font-size: 35px;
+    transform: scale(1.5);
+}
+
+.twitter-share a {
+    margin-top: -100px;
+    background: #33B3FF;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#me button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 550px;
+}
+
 
 /* NavBar Menu Settings */
 .topnav {
@@ -24,6 +110,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .topnav #myLinks {
@@ -52,72 +139,73 @@
     color: wheat;
 }
 
-  /* Title/Image of Me */
-  #home {
+/* Title/Image of Me */
+#home {
     display: block;
     margin: 0 auto;
-    width: 50%;  
-  }
+    width: 50%;
+}
 
-  #me img{
-      display: block;
-      margin: 0 auto;
-      width: 50%;
-      width: 550px;
-      border-radius: 50%;
-      padding-bottom: 30px;
-      margin-top: -300px;
-      margin-left: 500px;
-  }
+#me img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    width: 550px;
+    border-radius: 50%;
+    padding-bottom: 30px;
+    margin-top: -300px;
+    margin-left: 500px;
+}
 
-  #me h2 {
-      display: block;
-      width: 50%;
-      font-size: 65px;
-      margin-top: 250px;
-      
-  }
+#me h2 {
+    display: block;
+    width: 50%;
+    font-size: 65px;
+    margin-top: 250px;
 
-  #me p {
-      display: block;
-      width: 50%;
-      font-size: 35px;
-  }
+}
 
-  #me button {
-      font-size: 35px;
-      margin-left: 300px;
-      margin-top: 10px; 
-  }
+#me p {
+    display: block;
+    width: 50%;
+    font-size: 35px;
+}
 
-  /* Banner that is below my profile picture */
-  #banner img {
-      background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
-      width: 100%;
-      height: 600px;
-      margin: 0;
-      margin-top: 20px;
-  }
+#me button {
+    font-size: 35px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+/* Banner that is below my profile picture */
+#banner img {
+    margin: 0 auto;
+    background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 800px;
+}
 
 
 /* Video Background Project */
-  #projects #video_background {
-      background: darkred;
-      color: wheat;
-      border: 1px solid black;
-      box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
-      border-radius: 10px;
-      width: 400px;
-      height: 400px;
-      margin-left: 300px;
-      font-size: 30px;
-      text-align: center;
-      margin-top: 100px;
-      padding: 5px;
-  }
+#projects #video_background {
+    background: darkred;
+    color: wheat;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-left: 300px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 5px;
+}
 
-  /* Le Pain Project */
-  #projects #le_pain {
+/* Le Pain Project */
+#projects #le_pain {
     background: darkred;
     color: wheat;
     border: 1px solid black;
@@ -131,10 +219,10 @@
     margin-top: -410px;
     margin-left: 800px;
     padding: 5px;
-  }
+}
 
-  /* React Shopping Cart Project */
-  #projects #react_shoppingcart {
+/* React Shopping Cart Project */
+#projects #react_shoppingcart {
     background: darkred;
     color: wheat;
     border: 1px solid black;
@@ -148,10 +236,10 @@
     margin-top: -410px;
     margin-left: 1300px;
     padding: 5px;
-  }
+}
 
-  /* Tasklist Project */
-  #projects #tasklist {
+/* Tasklist Project */
+#projects #tasklist {
     background: darkred;
     color: wheat;
     border: 1px solid black;
@@ -165,10 +253,10 @@
     margin-top: 100px;
     margin-left: 300px;
     padding: 5px;
-  }
+}
 
-  /* Payment Gateway Form Project */
-  #projects #payment_gateway_form {
+/* Payment Gateway Form Project */
+#projects #payment_gateway_form {
     background: darkred;
     color: wheat;
     border: 1px solid black;
@@ -182,10 +270,10 @@
     margin-top: -412px;
     margin-left: 800px;
     padding: 5px;
-  }
+}
 
-  /* Responsive ChatBox UI Project */
-  #projects #responsive_chatbox_ui {
+/* Responsive ChatBox UI Project */
+#projects #responsive_chatbox_ui {
     background: darkred;
     color: wheat;
     border: 1px solid black;
@@ -199,221 +287,208 @@
     margin-top: -412px;
     margin-left: 1300px;
     padding: 5px;
-  }
+}
 
-  /* Projects Button Settings */
-  #projects #video_background button, 
-  #projects #le_pain button,
-  #projects #react_shoppingcart button,
-  #projects #tasklist button,
-  #projects #payment_gateway_form button,
-  #projects #responsive_chatbox_ui button
-   {
-      width: 300px;
-      height: 40px;
-      font-size: 30px;
-      cursor: pointer;
-      background: red;
-      border-radius: 10px;
-      border: none;
-  }
-
-  /* Projects Button Hover settings */
-  #projects #video_background button:hover,
-  #projects #le_pain button:hover,
-  #projects #react_shoppingcart button:hover,
-  #projects #tasklist button:hover,
-  #projects #payment_gateway_form button:hover,
-  #projects #responsive_chatbox_ui button:hover
-  {
-      background: darkred;
-  }
-
-  /* Projects a link settings */
-  #projects #video_background a,
-  #projects #le_pain a,
-  #projects #react_shoppingcart a,
-  #projects #tasklist a,
-  #projects #payment_gateway_form a,
-  #projects #responsive_chatbox_ui a
-   {
-      text-decoration: none;
-      color: wheat;
-  }
-
-  /* Projects Background change color when mouse moves over */
-  #projects #video_background:hover,
-  #projects #le_pain:hover,
-  #projects #react_shoppingcart:hover,
-  #projects #tasklist:hover,
-  #projects #payment_gateway_form:hover, 
-  #projects #responsive_chatbox_ui:hover{
+/* Projects Button Settings */
+#projects #video_background button,
+#projects #le_pain button,
+#projects #react_shoppingcart button,
+#projects #tasklist button,
+#projects #payment_gateway_form button,
+#projects #responsive_chatbox_ui button {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
     background: red;
-  }
+    border-radius: 10px;
+    border: none;
+}
+
+/* Projects Button Hover settings */
+#projects #video_background button:hover,
+#projects #le_pain button:hover,
+#projects #react_shoppingcart button:hover,
+#projects #tasklist button:hover,
+#projects #payment_gateway_form button:hover,
+#projects #responsive_chatbox_ui button:hover {
+    background: darkred;
+}
+
+/* Projects a link settings */
+#projects #video_background a,
+#projects #le_pain a,
+#projects #react_shoppingcart a,
+#projects #tasklist a,
+#projects #payment_gateway_form a,
+#projects #responsive_chatbox_ui a {
+    text-decoration: none;
+    color: wheat;
+}
+
+/* Projects Background change color when mouse moves over */
+#projects #video_background:hover,
+#projects #le_pain:hover,
+#projects #react_shoppingcart:hover,
+#projects #tasklist:hover,
+#projects #payment_gateway_form:hover,
+#projects #responsive_chatbox_ui:hover {
+    background: red;
+}
 
 /* Projects Background Img settings */
 #projects #video_background img,
 #projects #le_pain img,
-#projects #react_shoppingcart img, 
+#projects #react_shoppingcart img,
 #projects #tasklist img,
 #projects #payment_gateway_form img,
-#projects #responsive_chatbox_ui img
-{
+#projects #responsive_chatbox_ui img {
     width: 350px;
     height: 250px;
 }
 
-  /* About Me Section */
-  #about {
-      padding-bottom: 10px;
-  }
-  #about p {
-      font-size: 35px;
-      text-indent: 50px;
-  }
+/* About Me Section */
+#about {
+    padding-bottom: 10px;
+}
 
-  #about img {
+#about p {
+    font-size: 35px;
+    text-indent: 50px;
+}
+
+#about img {
     height: 650px;
     display: block;
     margin: 0 auto;
     width: 50%;
     margin-top: 30px;
     border-radius: 10px;
-  }
+}
 
-  /* Headings of H1 */
-  h1 {
-      background: darkred;
-      color: wheat;
-      text-align: center;
-      font-size: 50px;
- }
+/* Headings of H1 */
+h1 {
+    background: darkred;
+    color: wheat;
+    text-align: center;
+    font-size: 50px;
+}
 
- /* Resume Section */
-   .resume {
-      border: 5px solid white;
-      color: black;
-      width: 150px;
-      text-align: center;
-      border-radius: 10px;
-      cursor: pointer;
-      margin: 0 auto;
-      margin-top: 35px;
-      margin-bottom: 35px;
-      padding: 10px;
-  }
+/* Resume Section */
+.resume {
+    border: 5px solid white;
+    color: black;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 10px;
+}
 
-  #view_projects button {
+#view_projects button,
+.resume {
     display: block;
     margin: 0 auto;
     width: 50%;
-    width: 300px;
+    width: 500px;
     height: 80px;
     margin-top: 30px;
     background: black;
     font-size: 30px;
+    font-weight: 700;
     border-radius: 10px;
-  }
+}
 
-  #view_projects button a{
-      text-decoration: none;
-      color: wheat;
-  }
+#view_projects button a {
+    text-decoration: none;
+    color: wheat;
+}
 
-  #view_projects button:hover {
-      background: darkred;
-  }
+#view_projects button:hover,
+.resume:hover {
+    background: darkred;
+}
 
-  .resume {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    width: 300px;
-    height: 30px;
-    background: black;
-    font-size: 30px;
-    border-radius: 10px;
-  }
+.resume a {
+    text-decoration: none;
+    color: wheat;
+}
 
-  .resume:hover {
-      background: darkred;
-  }
-
-  .resume  a {
-      text-decoration: none;
-      color: wheat;
-  }
-
-  #contact h4 {
+#contact h4 {
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
+    font-weight: 700;
     color: red;
-  }
+}
 
-  #contact legend {
+#contact legend {
     display: block;
     margin: 0 auto;
     width: 50%;
     text-align: center;
-    font-size: 35px;
+    font-size: 70px;
+    font-weight: 700;
     color: red;
     border: 1px solid darkred;
-  }
+}
 
-  #contact label {
+#contact label {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 60px;
+    color: red;
+}
+
+#contact input {
     display: block;
     margin: 0 auto;
     width: 50%;
     font-size: 50px;
     color: red;
-    margin-top: 10px;
-  }
-
-  #contact input {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 40px;
-    color: red;
     background: beige;
-  }
+}
 
-  #contact input:hover {
-      border: 3px solid red;
-  }
+#contact input:hover {
+    border: 3px solid red;
+}
 
-  #contact textarea {
+#contact textarea {
     display: block;
     margin: 0 auto;
     width: 50%;
-    font-size: 35px;
+    font-size: 55px;
     resize: none;
     background: beige;
-  }
+}
 
-  #contact textarea:hover {
-      border: 3px solid red;
-  }
+#contact textarea:hover {
+    border: 3px solid red;
+}
 
-  #contact .submit {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-      font-size: 55px;
-      background: black;
-      color: red;
-      border: 3px solid darkred;
-      border-radius: 10px;
-      margin-top: 10px;
-  }
+#contact .submit {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 55px;
+    background: black;
+    color: red;
+    border: 3px solid darkred;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 500px;
+}
 
-  #contact .submit:hover {
-      cursor: pointer;
-      background: darkred;
-      color: beige;
-  }
+#contact .submit:hover {
+    cursor: pointer;
+    background: darkred;
+    color: beige;
+}
 
-  #contact .clear {
+#contact .clear {
     display: block;
     margin: 0 auto;
     width: 200px;
@@ -423,282 +498,208 @@
     border: 3px solid darkred;
     border-radius: 10px;
     margin-top: -71px;
-    margin-left: 1080px;
-  }
+    margin-left: 1200px;
+}
 
-  #contact .clear:hover {
-      cursor: pointer;
-      background: darkred;
-      color: beige;
-  }
+#contact .clear:hover {
+    cursor: pointer;
+    background: darkred;
+    color: beige;
+}
 
-  #social .github,
-  #social .youtube,
-  #social .facebook,
-  #social .linkedin,
-  #social .twitter {
-      height: 100px;
-      width: 100px;
-      margin-left: 250px;
-  }
+#social .github,
+#social .youtube,
+#social .facebook,
+#social .linkedin,
+#social .twitter {
+    height: 100px;
+    width: 100px;
+    margin-left: 250px;
+}
 
-  #social .github:hover,
-  #social .youtube:hover,
-  #social .facebook:hover,
-  #social .linkedin:hover,
-  #social .twitter:hover {
-      cursor: pointer;
-  }
-  #footer {
-      font-size: 35px;
-      text-align: center;
-      color: beige;
-      background: #333;
-  }
+#social .github:hover,
+#social .youtube:hover,
+#social .facebook:hover,
+#social .linkedin:hover,
+#social .twitter:hover {
+    cursor: pointer;
+}
 
-  @media  only screen and (max-width: 600px) {
-    #me  h2, 
-    #me p,
-    #me img {
-        display: block;
-        margin:100 auto;
-        width: 50%;
-        margin-top: 50px;
-        margin-left: -45px;
-        background: none;
-    }
+#footer {
+    font-size: 35px;
+    text-align: center;
+    color: beige;
+    background: #333;
+}
 
-    #me h2 {
-        margin-left: -20px;
-        width: 150%;
-        font-size: 35px;
-    }
-
-    #me p {
-        margin-left: -10px;
-        margin-top: -20px;
-        width: 150%;
-        font-size: 20px;
-    }
-
-  
-    #me img {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        height: 300px;
-        width: 300px;
-        margin-left: -45px;
-    }
-
-    #me button{
-        margin-left: 0px;
-        font-size: 20px;
-        margin-bottom: -85px;
-    }
-   
-
+/* Small Phones Display */
+@media screen and (max-width: 480px) {
     .topnav {
-        overflow: hidden;
-        background-color: red;
-        position: fixed;
-        top: 0;
-        left: 0;
+        margin: 0 auto;
         width: 100%;
-    }
-
-    .topnav #myLinks {
-        display: none;
     }
 
     .topnav a {
-        float: left;
-        color: wheat;
-        padding: 8px 5px;
-        text-decoration: none;
         font-size: 15px;
     }
 
-    .topnav a.icon {
-        float: right;
+    .switch {
+        height: 10px;
+        width: 108px;
+        position: fixed;
+        left: 340px;
+        top: 5px;
     }
 
-    .topnav a:hover {
-        background-color: darkred;
-        color: wheat;
+    .theme-switch {
+        display: inline-block;
+        height: 20px;
+        position: relative;
+        width: 50px;
     }
 
-    .active {
-        background-color: red;
-        color: wheat;
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .5s;
+    }
+
+    .slider:before {
+        background-color: #fff;
+        bottom: 3px;
+        content: "";
+        height: 15px;
+        left: 4px;
+        position: absolute;
+        transition: .3s;
+        width: 15px;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(30px);
+    }
+
+    .fa-moon, .fa-sun {
+        font-size: 25px;
+    }
+
+    #me h2 {
+        margin: 0 auto;
+        margin-top: 35px;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #me p {
+        margin-top: 5px;
+        margin: 0 auto;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #me img {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .fb-like {
+        margin: 0 auto;
+
+    }
+
+    .twitter-share a {
+        margin: 0 auto;
+        margin-left: 60px;
     }
 
     #banner img {
-        background-image: url("/MyPortfolioWebsite/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg");
-        width: 100%;
-        height: 285px;
-        margin-top: 20px;
-    }  
+        margin: 10 auto;
+        height: 500px;
+    }
 
-    #projects #video_background, 
-    #projects #le_pain, 
-    #projects #react_shoppingcart, 
-    #projects #tasklist, 
+    #projects #video_background,
+    #projects #le_pain,
+    #projects #react_shoppingcart,
+    #projects #tasklist,
     #projects #payment_gateway_form,
-    #projects #responsive_chatbox_ui {
-        background: darkred;
-        color: wheat;
-        border: 1px solid black;
-        box-shadow: 10px 10px 20px rgba(255, 255, 255, 1);
-        border-radius: 10px;
-        width: 200px;
-        height: 200px;
-        font-size: 15px;
-        text-align: center;
-        margin-top: 20px;
-        display: block;
+    #projects #responsive_chatbox_ui,
+    #projects #view_projects {
+        margin: 20px auto;
+    }
+
+    #projects #view_projects button {
         margin: 0 auto;
         width: 50%;
-        margin-bottom: 20px;
-    }
-
-    #projects #video_background img, 
-    #projects #le_pain img, 
-    #projects #react_shoppingcart img, 
-    #projects #tasklist img, 
-    #projects #payment_gateway_form img,
-    #projects #responsive_chatbox_ui img
-     {
-        width: 100px;
-        height: 100px;
-    }
-
-    #projects #video_background button, 
-    #projects #le_pain button, 
-    #projects #react_shoppingcart button, 
-    #projects #tasklist button, 
-    #projects #payment_gateway_form button,
-    #projects #responsive_chatbox_ui button {
-        width: 150px;
-        font-size: 15px;
-    }
-
-    #view_projects button {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        font-size: 15px;
-    }
-
-    .resume {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        
-    }
-
-    .resume a {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #about p {
-        display: block;
         margin: 0 auto;
-        width: 100%;
-        font-size: 15px;
-        padding-left: 10px;
-    }
-    
-    #about img {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        height: 150px;
-        margin-top: 20px;
-    }
-    #contact h4 {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        font-size: 15px;
+        font-size: 20px;
     }
 
-    #contact legend {
-        display: block;
+    #about img {
         margin: 0 auto;
-        width: 50%;
-        font-size: 20px;
+        width: 90%;
+        height: 90%;
     }
-    
-    #contact label {
-        display: block;
+
+    #resume .resume {
         margin: 0 auto;
         width: 50%;
-        font-size: 20px;
-        margin-bottom: -15px;
+        height: 50%;
+    }
+
+    #contact h4 {
+        font-size: 30px;
+    }
+
+    #contact legend,
+    #contact label,
+    #contact textarea {
+        font-size: 30px;
+        width: 75%;
     }
 
     #contact input {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        font-size: 15px;
-        margin-bottom: -15px;
+        font-size: 25px;
+        width: 75%;
+        margin-top: -20px;
     }
-    
-    #contact textarea {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        font-size: 15px;
-        resize: none;
-        margin-top: 20px;
-    }
-    
+
     #contact .submit {
-        display: block;
         margin: 0 auto;
+        margin-left: 55px;
+        font-size: 25px;
         width: 25%;
-        font-size: 20px;
-        margin-left: 115px;
     }
 
     #contact .clear {
-        display: block;
         margin: 0 auto;
-        width: 25%;
-        font-size: 20px;
-        margin-left: 250px;
-        margin-top: -31px;
-    }
-    
-    h1 {
+        margin-left: 300px;
+        margin-top: -38px;
         font-size: 25px;
-    }  
-    
+        width: 25%;
+    }
+
     #social .github,
     #social .youtube,
     #social .facebook,
     #social .linkedin,
     #social .twitter {
-          margin-left: 50px;
-          width: 35px;
-          height: 35px;
-      }
+        display: inline;
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+    }
 
     #footer {
-          font-size: 15px;
-          text-align: center;
-      }
-
-      .fb-like {
-          margin-top: 60px;
-          width: 200px;
-          padding-top: 125px;
-      }
-
-      .twitter-share-button {
-          margin-left: 65px;
-      }
-
+        font-size: 20px;
+    }
 }
